@@ -1,0 +1,119 @@
+/* src/components/Leaderboard.css */
+.leaderboard {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  
+  padding-top: 0px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  /* border-radius: 10px; */
+
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  height: 100vh; /* Ensure it takes full viewport height */
+}
+
+.heading{
+  
+  background-image: url('../public/img/Daily\ View\ 1.png');
+  position: relative;
+  height: 10vh;
+  background-color: #181818;
+}
+
+.nav{
+  
+  height: 8vh;
+  background-color: #181818;
+}
+.imghead .imghead1{
+  display: flex;
+  
+
+}
+.imghead1{
+  padding-left: 300px;
+}
+.pop{
+  height: 30vh;
+  background-image: url('../public/img/imgfooter.png');
+  /* background-color: #bf2222; */
+}
+
+.player-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../public/img/imgmain.png');
+  gap: 20px; /* Space between each player element */
+  flex: 1; /* Take available space */
+  overflow-y: auto; /* Scroll if content exceeds */
+}
+
+.player {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #444;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  border-radius: 5px;
+}
+.player:nth-child(2) {
+  background-color: rgba(255, 217, 0, 0.58); /* First place */
+  color: #222;
+}
+
+.player:nth-child(3) {
+  background-color: rgba(192, 192, 192, 0.658); /* Second place */
+  color: #222;
+}
+
+.player:nth-child(4) {
+  background-color: rgba(186, 108, 52, 0.751); /* Third place */
+  color: #222;
+}
+
+.player .position,
+.player .name,
+.player .prize,
+.player .time {
+  flex: 1;
+}
+
+/* .footer {
+  padding: 20px;
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+} */
+ /* SlidingLine.css */
+
+/* SlidingText.css */
+
+.text-container {
+  position: relative;
+  width: 100%; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.sliding-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 24px; /* Adjust as needed */
+  animation: slide 5s linear infinite; /* Adjust the duration and iteration as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

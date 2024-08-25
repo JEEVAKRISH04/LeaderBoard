@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Message Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simple Message Board</h1>
+        </header>
+
+        <!-- Message Board Layout -->
+        <div class="message-board">
+            <!-- Message Input Section -->
+            <div class="message-input">
+                <textarea id="messageText" placeholder="Write your message..."></textarea>
+                <button onclick="postMessage()">Post Message</button>
+            </div>
+
+            <!-- Messages Display Section -->
+            <div class="messages" id="messages"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
